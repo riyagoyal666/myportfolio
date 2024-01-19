@@ -1,0 +1,178 @@
+header {
+  height: 125vh;
+  padding-top: 7rem;
+  padding-bottom: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+  /* position: relative; */
+}
+
+.header_container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/* Addind style on Cta */
+
+.cta {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+
+.header_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: fixed;
+  left: 40px;
+  bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.header_socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+
+
+.me {
+ 
+  width: 18rem;
+  height: 30rem;
+  position: absolute;
+  left: calc(50% - 9rem);
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  margin-top: 1rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  padding: 4rem 1.5rem 1.5rem 1.5rem;
+}
+
+.me_pic {
+  border-radius: 12rem 12rem 0 0;
+}
+
+/* Scroll down line */
+.scroll_down {
+  position: fixed;
+  right: -0.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.hero-image {
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/src/assets/readme1.jpg);
+
+  /* Set a specific height */
+  height: 95%;
+  border-radius: 1% 1% 5% 5%;
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 1.8rem 1.8rem;
+  /* width: 100%; */
+  animation: unscramble 3s ease-in-out forwards;
+  transform: scale(1.7);
+}
+@keyframes unscramble {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        transform: scale(1.7);
+        filter: blur(10px);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        transform: scale(1.7);
+        filter: blur(0);
+    }
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* Media queries (Medium devices) */
+@media screen and (max-width: 1024px) {
+  header {
+    height: 122vh;
+  }
+  .hero-image {
+    /* border-radius: 10% 10% 40% 40%; */
+    margin: 3rem 3rem;
+    height: inherit;
+    transform: scale(1.7);
+  }
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 120vh;
+  }
+  .header_socials,
+  .scroll_down {
+    display: none;
+  }
+  .hero-image {
+    /* border-radius: 60% 60% 0 0; */
+    margin: 4rem 4rem;
+    transform: scale(1.7);
+    margin: 1.8rem 1.8rem;
+  }
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+  }
+}
+
+.span {
+  animation-fill-mode: forwards;
+}
+/* header.css */
+.hero-text h1 {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation: slideIn 1s ease-in-out;
+}
+
+.hero-text h5 {
+  animation: slideIn 1s ease-in-out 0.5s;
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Test */
