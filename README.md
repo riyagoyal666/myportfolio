@@ -82,9 +82,6 @@ In the project directory, you can run:
 3. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
    I also used react icons to display pages more beautifully.
 
-## Deployment
-
-The final projet will be depolyed using Vercel.com
 
 ## Demo
 
