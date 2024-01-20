@@ -9,11 +9,8 @@ Create project by typing (npx create-react-app nameOfTheProject) enter.
 - Node.js
 - Cors
 
-[See Express](https://expressjs.com/)
 
-[See Firebase](https://firebase.google.com/)
 
-![My Image](././src/assets/readMe.png)
 
 ## Process
 
@@ -91,4 +88,4 @@ The final projet will be depolyed using Vercel.com
 
 ## Demo
 
-(https://renzosilva.dev)
+( https://riya1portfolio.netlify.app/)
